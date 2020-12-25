@@ -58,12 +58,13 @@
 <ul class="text-size">
   <li>1879 - Born on 14 March. </li>
   <li>1895 - Einstein obtained exceptional grades in physics and mathematics.</li>
-  <li>1903 - Got married with <a id = "person-wife" class = "hvr" href ="https://en.wikipedia.org/wiki/Mileva_Mari%C4%87" target="_blank"> Mileva Marić</a>, they divorced in 1919.</li>
+  <li>1903 - Got married with <a id = "person-wife" class = "hvr" href ="https://en.wikipedia.org/wiki/Mileva_Mari%C4%87" target="_blank"> Mileva Marić</a>, they divorced on 1919.</li>
   <li>1919 - Got married with <a class ="hvr" id="wife-2" href="https://en.wikipedia.org/wiki/Elsa_Einstein" target="_blank">  Elsa Löwentha </a>, she died in 1936.</li>
+  <li>2020 - O mundo acabou. </li>
   <li> </li>
   <li> </li>
   <li> </li>
-  <li> </li>
+
   </ul>
 
 </main>
