@@ -55,6 +55,18 @@
         text-decoration: underline;
       }
     </style>
+    <script>
+      function btnColor() {
+      document.getElementById("main").style.background = "black";
+      document.getElementById("main").style.color = "orange";
+      document.getElementById("orgn").style.color = "orange";
+      document.getElementById("text").style.color = "white";
+      document.getElementById("text-2").style.color = "white";
+      document.getElementById("text-3").style.color = "white";
+      document.getElementById("text-4").style.color = "white";
+      document.getElementById("text-5").style.color = "blue";
+      }
+      </script>
 </head>
 
 <main id="main">
@@ -62,15 +74,15 @@
   <h1 id = "heading"><strong>ALBERT EINSTEIN </strong></h1>
   <hr>
   <p id = "text"><em><strong>"Imagination is more important than knowledge."</strong></em></p>
-  <p>This is one of the key things, that lead the humanity to evolution, because, if we think about it, the act of thinking comes first from imagination, which lead us to build the knowledge around that tought.</p>
+  <p id = "text-2">This is one of the key things, that lead the humanity to evolution, because, if we think about it, the act of thinking comes first from imagination, which lead us to build the knowledge around that tought.</p>
   <figure id = "img-div">
 <img id = "image" src="https://s2.glbimg.com/Phsmu_8jo4o2FAXjmFoEuHQFTto=/620x430/e.glbimg.com/og/ed/f/original/2016/03/14/albert-einstein-wikipedia.jpg" alt= "Albert Einsten Photo">
   <figcaption id="img-caption">Albert Einstein in old age.</figcaption>
   </figure>
   <h4 id = "tribute-info"> MAIN CREATIONS: </h4>
-    <p class="text-size">He developed the <a id="tribute-link" href = "https://en.wikipedia.org/wiki/Theory_of_relativity" target="_blank" > <strong class="hvr">theory relativity</strong> </a> and <a id="tribute-link-2" href = "https://www.livescience.com/33816-quantum-mechanics-explanation.html" target="_blank"> <strong class="hvr">quantum mechanics</strong></a>.</p>
+    <p id="text-3" class="text-size">He developed the <a id="tribute-link" href = "https://en.wikipedia.org/wiki/Theory_of_relativity" target="_blank" > <strong class="hvr">theory relativity</strong> </a> and <a id="tribute-link-2" href = "https://www.livescience.com/33816-quantum-mechanics-explanation.html" target="_blank"> <strong class="hvr">quantum mechanics</strong></a>.</p>
 <h4 id = "tribute-life"> A LITTLE BIT OF HIS LIFE: </h4>
-<ul class="text-size">
+<ul id="orgn" class="text-size">
   <li>1879 - Born on 14 March. </li>
   <li>1895 - Einstein obtained exceptional grades in physics and mathematics.</li>
   <li>1902 - Published his first paper, "Conclusions from the capillarity phenomena". </li>
@@ -88,15 +100,9 @@
   <li>1950 - Described his "unified field theory" in a Scientific American article titled "On the Generalized Theory of Gravitation".</li>
   <li>1956 - He died of rupture of an abdominal aortic aneurysm.</li>
   </ul>
-  <p class="font-last" >If you are interest in know more about him, you can check out this web page: <a class ="hvr" target=_blank href="https://en.wikipedia.org/wiki/Albert_Einstein">More about Albert Einstein.</a></p>
+  <p id = "text-4" class="font-last" >If you are interest in know more about him, you can check out this web page: <a class ="hvr" target=_blank href="https://en.wikipedia.org/wiki/Albert_Einstein">More about Albert Einstein.</a></p>
 <button type="button" onclick="btnColor()"> Change Background </button>
-  <p class="font-last2">All the content on this page was found in Wikipedia.</p>
-<script>
-  function btnColor() {
-  document.getElementById("main").style.background = "black";
-  document.getElementById("main").style.color = "orange";
-  }
-  </script>
+  <p id="text-5" class="font-last2">All the content on this page was found in Wikipedia.</p>
 
 </main>
 </html>
