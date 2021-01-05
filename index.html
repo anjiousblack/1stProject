@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
-  <title id = "title-page">Albert Einstein</title>
-  <style>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant&display=swap"
+      rel="stylesheet"
+    />
+    <title id="title-page">Albert Einstein</title>
+    <style>
       main {
         font-family: Assistant;
       }
@@ -13,16 +16,15 @@
         margin: 0px;
         padding: 50px;
         background-color: rgba(1, 1, 1, 0.1);
-        border-radius: 1px;
-        border-width:9px;
+        border-radius: 5px;
+        border-width: 100%;
         border-style: solid;
         border-color: black;
-
       }
       #image {
         width: 500px;
       }
-      .hvr:hover{
+      .hvr:hover {
         color: red;
       }
       #img-caption {
@@ -32,7 +34,7 @@
         color: #202020;
       }
       .text-size {
-        font-size : 16px;
+        font-size: 16px;
       }
       ul {
         color: #202020;
@@ -42,8 +44,8 @@
       body {
       }
       figcaption {
-        text-align:left;
-        padding-left:327px;
+        text-align: left;
+        padding-left: 327px;
       }
       .font-last {
         font-size: 17px;
@@ -56,63 +58,165 @@
       }
       #btnp {
       }
+      main video {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 220%;
+        opacity: 0.21;
+        object-fit: cover;
+        z-index: -1;
+      }
     </style>
-</head>
+  </head>
 
-<main id = "main">
-
-  <h1 id = "heading"><strong>ALBERT EINSTEIN </strong></h1>
-  <hr>
-  <p id = "text"><em><strong>"Imagination is more important than knowledge."</strong></em></p>
-  <p id = "text-2">This is one of the key things that lead the humanity to evolution, because, if we think about it, the act of thinking comes first from imagination, which lead us to build the knowledge around that thought.</p>
-<button type="button" onclick="myFun()">Translate</button>
-  <figure id = "img-div">
-<img id = "image" src="https://s2.glbimg.com/Phsmu_8jo4o2FAXjmFoEuHQFTto=/620x430/e.glbimg.com/og/ed/f/original/2016/03/14/albert-einstein-wikipedia.jpg" alt= "Albert Einsten Photo">
-  <figcaption id="img-caption">Albert Einstein in old age.</figcaption>
-  </figure>
-  <h4 id = "tribute-info"> MAIN CREATIONS: </h4>
-    <p id="text-3" class="text-size">He developed the <a id="tribute-link" href = "https://en.wikipedia.org/wiki/Theory_of_relativity" target="_blank" > <strong class="hvr">theory relativity</strong> </a> and <a id="tribute-link-2" href = "https://www.livescience.com/33816-quantum-mechanics-explanation.html" target="_blank"> <strong class="hvr">quantum mechanics</strong></a>.</p>
-<h4 id = "tribute-life"> A LITTLE BIT OF HIS LIFE: </h4>
-<ul id="orgn" class="text-size">
-  <li>1879 - Born on 14 March. </li>
-  <li>1895 - Einstein obtained exceptional grades in physics and mathematics.</li>
-  <li>1902 - Published his first paper, "Conclusions from the capillarity phenomena". </li>
-  <li>1903 - Got married with <a id = "person-wife" class = "hvr" href ="https://en.wikipedia.org/wiki/Mileva_Mari%C4%87" target="_blank"> Mileva Marić</a>, they divorced in 1919.</li>
-  <li>1903 - Two papers was published in 1902–1903 (thermodynamics) attempted to interpret atomic phenomena from a statistical point of view</li>
-  <li>1905 - Einstein postulated that light itself consists of localized particles. </li>
-  <li>1907 - Developed the theory of gravitation. </li>
-  <li>1907 - Einstein proposed a model of matter where each atom in a lattice structure is an independent harmonic oscillator.</li>
-  <li>1908 - He was recognized as a leading scientist and was appointed lecturer at the University of Bern.  </li>
-  <li>1916 - Predicted gravitation waves.</li>
-  <li>1917 - After applying the theory of relativity, he discovered that the general field equations predicted a universe that was dynamic, either contracting or expanding</li>
-  <li>1919 - Got married with <a class ="hvr" id="wife-2" href="https://en.wikipedia.org/wiki/Elsa_Einstein" target="_blank">  Elsa Löwentha </a>, she died in 1936.</li>
-  <li>1921 - Nobel Prize in Physics.</li>
-  <li>1935 - Einstein considered two particles which had interacted such that their properties were strongly correlated (quantum mechanics).</li>
-  <li>1950 - Described his "unified field theory" in a Scientific American article titled "On the Generalized Theory of Gravitation".</li>
-  <li>1956 - He died of rupture of an abdominal aortic aneurysm.</li>
-  </ul>
-  <p id = "text-4" class="font-last" >If you are interest in know more about him, you can check out this web page: <a class ="hvr" target=_blank href="https://en.wikipedia.org/wiki/Albert_Einstein">More about Albert Einstein.</a></p>
-<button type="button" onclick="btnColor()">Dark mode</button>
-  <p id="text-5" class="font-last2">All the content on this page was found in Wikipedia.</p>
-  <script>
-    function btnColor() {
-    document.getElementById("main").style.background = "black";
-    document.getElementById("main").style.color = "orange";
-    document.getElementById("orgn").style.color = "orange";
-    document.getElementById("text").style.color = "white";
-    document.getElementById("text-2").style.color = "white";
-    document.getElementById("text-3").style.color = "white";
-    document.getElementById("text-4").style.color = "white";
-    document.getElementsByClassName('font-last2')[0].style.color = "white";
-    document.getElementById("main").style.borderColor = "orange";
-    }
-    function myFun(){
-      document.getElementById("text").innerHTML = "\"Imaginação é mais importante do que conhecimento.\"";
-      document.getElementById("text").style.fontWeight = "bold";
-      document.getElementById("text").style.fontStyle = "italic";
-      let textt = "Essa é uma das coisas fundamentais que conduzem a humanidade à evolução, pois, se pensarmos bem, o ato de pensar vem primeiro da imaginação, que nos leva a construir conhecimentos em torno desse pensamento.";
-      document.getElementById("text-2").innerHTML = textt;
-    }
+  <main id="main">
+    <video
+      src="./istockphoto-151360924-640_adpp_is.mp4"
+      autoplay
+      muted
+      loop
+    ></video>
+    <h1 id="heading"><strong>ALBERT EINSTEIN </strong></h1>
+    <hr />
+    <p id="text">
+      <em><strong>"Imagination is more important than knowledge."</strong></em>
+    </p>
+    <p id="text-2">
+      This is one of the key things that lead the humanity to evolution,
+      because, if we think about it, the act of thinking comes first from
+      imagination, which lead us to build the knowledge around that thought.
+    </p>
+    <button type="button" onclick="myFun()">Translate</button>
+    <figure id="img-div">
+      <img
+        id="image"
+        src="https://s2.glbimg.com/Phsmu_8jo4o2FAXjmFoEuHQFTto=/620x430/e.glbimg.com/og/ed/f/original/2016/03/14/albert-einstein-wikipedia.jpg"
+        alt="Albert Einsten Photo"
+      />
+      <figcaption id="img-caption">Albert Einstein in old age.</figcaption>
+    </figure>
+    <h4 id="tribute-info">MAIN CREATIONS:</h4>
+    <p id="text-3" class="text-size">
+      He developed the
+      <a
+        id="tribute-link"
+        href="https://en.wikipedia.org/wiki/Theory_of_relativity"
+        target="_blank"
+      >
+        <strong class="hvr">theory relativity</strong>
+      </a>
+      and
+      <a
+        id="tribute-link-2"
+        href="https://www.livescience.com/33816-quantum-mechanics-explanation.html"
+        target="_blank"
+      >
+        <strong class="hvr">quantum mechanics</strong></a
+      >.
+    </p>
+    <h4 id="tribute-life">A LITTLE BIT OF HIS LIFE:</h4>
+    <ul id="orgn" class="text-size">
+      <li>1879 - Born on 14 March.</li>
+      <li>
+        1895 - Einstein obtained exceptional grades in physics and mathematics.
+      </li>
+      <li>
+        1902 - Published his first paper, "Conclusions from the capillarity
+        phenomena".
+      </li>
+      <li>
+        1903 - Got married with
+        <a
+          id="person-wife"
+          class="hvr"
+          href="https://en.wikipedia.org/wiki/Mileva_Mari%C4%87"
+          target="_blank"
+        >
+          Mileva Marić</a
+        >, they divorced in 1919.
+      </li>
+      <li>
+        1903 - Two papers was published in 1902–1903 (thermodynamics) attempted
+        to interpret atomic phenomena from a statistical point of view
+      </li>
+      <li>
+        1905 - Einstein postulated that light itself consists of localized
+        particles.
+      </li>
+      <li>1907 - Developed the theory of gravitation.</li>
+      <li>
+        1907 - Einstein proposed a model of matter where each atom in a lattice
+        structure is an independent harmonic oscillator.
+      </li>
+      <li>
+        1908 - He was recognized as a leading scientist and was appointed
+        lecturer at the University of Bern.
+      </li>
+      <li>1916 - Predicted gravitation waves.</li>
+      <li>
+        1917 - After applying the theory of relativity, he discovered that the
+        general field equations predicted a universe that was dynamic, either
+        contracting or expanding
+      </li>
+      <li>
+        1919 - Got married with
+        <a
+          class="hvr"
+          id="wife-2"
+          href="https://en.wikipedia.org/wiki/Elsa_Einstein"
+          target="_blank"
+        >
+          Elsa Löwentha </a
+        >, she died in 1936.
+      </li>
+      <li>1921 - Nobel Prize in Physics.</li>
+      <li>
+        1935 - Einstein considered two particles which had interacted such that
+        their properties were strongly correlated (quantum mechanics).
+      </li>
+      <li>
+        1950 - Described his "unified field theory" in a Scientific American
+        article titled "On the Generalized Theory of Gravitation".
+      </li>
+      <li>1956 - He died of rupture of an abdominal aortic aneurysm.</li>
+    </ul>
+    <p id="text-4" class="font-last">
+      If you are interest in know more about him, you can check out this web
+      page:
+      <a
+        class="hvr"
+        target="_blank"
+        href="https://en.wikipedia.org/wiki/Albert_Einstein"
+        >More about Albert Einstein.</a
+      >
+    </p>
+    <button type="button" onclick="btnColor()">Dark mode</button>
+    <p id="text-5" class="font-last2">
+      All the content on this page was found in Wikipedia.
+    </p>
+    <script>
+      function btnColor() {
+        document.getElementById("main").style.background = "black";
+        document.getElementById("main").style.color = "orange";
+        document.getElementById("orgn").style.color = "orange";
+        document.getElementById("text").style.color = "white";
+        document.getElementById("text-2").style.color = "white";
+        document.getElementById("text-3").style.color = "white";
+        document.getElementById("text-4").style.color = "white";
+        document.getElementsByClassName("font-last2")[0].style.color = "white";
+        document.getElementById("main").style.borderColor = "orange";
+      }
+      function myFun() {
+        document.getElementById("text").innerHTML =
+          '"Imaginação é mais importante do que conhecimento."';
+        document.getElementById("text").style.fontWeight = "bold";
+        document.getElementById("text").style.fontStyle = "italic";
+        let textt =
+          "Essa é uma das coisas fundamentais que conduzem a humanidade à evolução, pois, se pensarmos bem, o ato de pensar vem primeiro da imaginação, que nos leva a construir conhecimentos em torno desse pensamento.";
+        document.getElementById("text-2").innerHTML = textt;
+      }
     </script>
-</main>
+  </main>
 </html>
