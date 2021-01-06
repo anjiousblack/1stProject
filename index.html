@@ -13,13 +13,14 @@
       }
       main {
         text-align: center;
-        margin: 0px;
+        margin: -10px;
         padding: 50px;
         background-color: rgba(1, 1, 1, 0.1);
         border-radius: 5px;
-        border-width: 100%;
+        /* border-width: 101 px;
         border-style: solid;
         border-color: black;
+        color: black; */
       }
       #image {
         width: 500px;
@@ -68,6 +69,17 @@
         object-fit: cover;
         z-index: -1;
       }
+
+      button:hover {
+        animation-name: normall;
+        animation-duration: 100ms;
+        animation-fill-mode: forwards;
+      }
+      @keyframes normall {
+        100% {
+          color: orange;
+        }
+      }
     </style>
   </head>
 
@@ -88,7 +100,7 @@
       because, if we think about it, the act of thinking comes first from
       imagination, which lead us to build the knowledge around that thought.
     </p>
-    <button type="button" onclick="myFun()">Translate</button>
+    <button type="button" class="bauton" onclick="myFun()">Translate</button>
     <figure id="img-div">
       <img
         id="image"
