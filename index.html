@@ -16,11 +16,14 @@
         margin: -10px;
         padding: 50px;
         background-color: rgba(1, 1, 1, 0.1);
-        border-radius: 5px;
+        border-radius: 5px;*
         /* border-width: 101 px;
         border-style: solid;
         border-color: black;
         color: black; */
+      }
+      .f-back{
+      background-color: rgba(1, 1, 1, 0.1);
       }
       #image {
         width: 500px;
@@ -56,6 +59,7 @@
         font-size: 10px;
         font-weight: bold;
         text-decoration: underline;
+
       }
       #btnp {
       }
@@ -64,12 +68,22 @@
         top: 0px;
         left: 0px;
         width: 100%;
-        height: 220%;
+        height: 205%;
         opacity: 0.21;
         object-fit: cover;
         z-index: -1;
       }
 
+      .bauton{
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        font-weight: bold;
+        border-width: 1px;
+        width: 85px;
+        height: 20px;
+        border-radius: 3px;
+      }
       button:hover {
         animation-name: normall;
         animation-duration: 100ms;
@@ -80,16 +94,46 @@
           color: orange;
         }
       }
+
+      .bauton2{
+        position: fixed;
+        top: 0px;
+        right: 100px;
+        width: 85px;
+        height: 20px;
+        border-width: 1px;
+        border-radius: 3px;
+        font-weight: bold;
+      }
+
+      #heading {
+        animation-name: try;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        font-size: 40px;
+
+      }
+      @keyframes try {
+        0% {
+          color: orangered;
+        }
+        50% {
+           color: rgb(0, 255, 76);
+        }
+        100% {
+          color:red;
+        }
+      }
     </style>
   </head>
 
   <main id="main">
-    <!--<video
+    <video
       src="./istockphoto-151360924-640_adpp_is.mp4"
       autoplay
       muted
       loop
-    ></video>-->
+    ></video>
     <h1 id="heading"><strong>ALBERT EINSTEIN </strong></h1>
     <hr />
     <p id="text">
@@ -100,7 +144,7 @@
       because, if we think about it, the act of thinking comes first from
       imagination, which lead us to build the knowledge around that thought.
     </p>
-    <button type="button" class="bauton" onclick="myFun()">Translate</button>
+    <button type="button" class="bauton" onclick="myFun()">PT-BR</button>
     <figure id="img-div">
       <img
         id="image"
@@ -204,7 +248,9 @@
         >More about Albert Einstein.</a
       >
     </p>
-    <button type="button" onclick="btnColor()">Dark mode</button>
+    <button class="bauton2" type="button" onclick="btnColor()">
+      Dark mode
+    </button>
     <p id="text-5" class="font-last2">
       All the content on this page was found in Wikipedia.
     </p>
@@ -219,6 +265,7 @@
         document.getElementById("text-4").style.color = "white";
         document.getElementsByClassName("font-last2")[0].style.color = "white";
         document.getElementById("main").style.borderColor = "orange";
+        // document.getElementsByClassName("bauton")[0].style.color = "orange";
       }
       function myFun() {
         document.getElementById("text").innerHTML =
